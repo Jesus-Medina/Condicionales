@@ -1,0 +1,94 @@
+:root {
+    --primariy: #212121;
+    --secondary: #3e3e3e;
+}
+
+/* Globales */
+html {
+    font-size: 62.5%; /* Resetear el font-size para ocupar REM a 10px*/
+    box-sizing: border-box; /* Hack para boxmodel*/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 16px; /* 1rem = 10px */
+}
+
+html, body{
+    height:100%;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+}
+/* Fin de bloque Globales */
+
+
+.contenedor {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/assets/img/fondo.jpg");
+
+}
+
+/* circulo */
+.contenedor .circulo{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-image: url("https://media2.giphy.com/media/JOGSqeA0couhDhnm8g/giphy.gif?cid=ecf05e47rvp2b674itw2tlbzxo544hy16j62hvvvn89208ze&rid=giphy.gif&ct=g");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(156,128,37,1);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(156,128,37,1);
+    box-shadow: 0px 0px 5px 1px rgba(156,128,37,1);
+}
+
+.contenedor .circulo__hover:hover {
+    cursor: pointer;
+    transition: all 500ms;
+    transform: scale(1.15);
+}
+
+.dialogo {
+    color: white;
+    padding: 1rem;
+    font-size: 1.6rem;
+    text-align: center;
+    bottom: 10rem;
+}
+
+.dialogo span {
+    color: goldenrod;
+}
+
+.transition {
+    transition: all 3s;
+    transform: scale(20);
+}
+
+/* Navegacion */
+
+
+
+@media (min-width: 768px) {
+    body {
+        height: 100vh;
+    }
+
+    .contenedor {
+        height: 100vh;
+    }
+
+    .dialogo {
+        font-size: 3rem;
+    }
+}

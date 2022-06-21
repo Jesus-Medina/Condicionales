@@ -1,0 +1,143 @@
+:root {
+    --primariy: #212121;
+    --secondary: #3e3e3e;
+}
+
+/* Globales */
+html {
+    font-size: 62.5%; /* Resetear el font-size para ocupar REM a 10px*/
+    box-sizing: border-box; /* Hack para boxmodel*/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 16px; /* 1rem = 10px */
+}
+
+html, body{
+    height:100%;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-flex {
+    gap: 1rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/assets/img/fondo2.jpg");
+}
+
+.container-flex {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-flex .stickers-container {
+    height: 550px;
+    display: flex;
+    align-items: center;
+}
+
+.container-flex .stickers-container .stickers {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-flex .stickers-container .stickers> * {
+    margin: 1rem;
+    border: 1px solid black;
+}
+
+.container-flex .stickers-container .stickers img{
+    border-radius: 1rem;
+    border: 1px solid black;
+    height: 300px;
+}
+
+.container-flex .stickers-container .stickers .input{
+    text-align: center;
+    font-size: 3rem;
+    width: 30%;
+}
+
+.container-flex .stickers-container > * {
+    margin: 1rem;
+}
+
+.container-flex .total {
+    padding: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: black;
+}
+
+.container-flex .total {
+    color: white;
+    border: 1px solid white;
+}
+
+.container-flex .total .verificar-btn {
+    background-color: black;
+    color: white;
+    padding: 1rem 10rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.container-flex .total .pasar__al__carro {
+    background-color: black;
+    color: gold;
+    padding: 1rem 10rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+    display: block;
+    border: 1px solid goldenrod;
+    margin-top: 1rem;
+}
+
+.container-flex .total .pasar__al__carro:hover {
+    background-color: goldenrod;
+    border: 1px solid gold;
+    color: white;
+}
+
+.container-flex .total .verificar-btn:hover {
+    background-color: goldenrod;
+}
+
+.container-flex .total p {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.container-flex .total span {
+    color: goldenrod;
+}
+
+.container-flex .pag-btn {
+    cursor: pointer;
+    padding: 1rem 3.5rem;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    margin: .5rem 1rem;
+    font-size: 2rem;
+}
+
+.container-flex .pag-btn:hover {
+    background-color: goldenrod;
+}
